@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reg.css">
+    <title>Registration Form</title>
+    <script src="Reg.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration Form for Students</div>
+        <form action="#" name="MyForm">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" name="fname" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" name="lname" placeholder="Enter your surname" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Email ID</span>
+                    <input type="email" name="email" placeholder="Enter your email id" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" name="number" placeholder="Mobile Number" maxlength="10" id="phonenumber" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">College Name</span>
+                    <input type="text" name="cname" placeholder="Enter your college name" required>
+                </div>
+
+                <div class="input-box">         
+                    <span class="details">Roll No</span>
+                    <input type="text" name="rollno" placeholder="Enter your roll no" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Branch</span>
+                    <input type="text" name="branch" placeholder="Enter your branch" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Semester</span>
+                    <input type="text" name="sem" placeholder="Enter your SEM" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1" required>
+                <input type="radio" name="gender" id="dot-2" required>
+                <input type="radio" name="gender" id="dot-3" required>
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Other</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Proceed to Pay" onclick="checkdetails()">
+                <input type="reset" value="Reset" style="margin-left: 50px;">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
